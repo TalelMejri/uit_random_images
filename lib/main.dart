@@ -30,20 +30,17 @@ class ImageApp extends StatefulWidget {
 
 class _ImageApp extends State<ImageApp> {
 
-  int leftmage=1;
-  int rightimage=4;
+   int leftmage=1;
+   int rightimage=4;
    late ConfettiController _centerController;
   
-   @override
+  @override
   void initState() {
     super.initState();
     _centerController =
         ConfettiController(duration: const Duration(seconds: 5));
-
   }
 
- 
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,7 +65,6 @@ class _ImageApp extends State<ImageApp> {
           Padding(padding: const EdgeInsets.all(35),
           child: Row(
             children: [
-               
               Expanded(
                 flex: 2,
                 child:TextButton(onPressed: (){setState(() {
