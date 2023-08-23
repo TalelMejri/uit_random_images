@@ -76,7 +76,6 @@ class _ImageApp extends State<ImageApp> {
                  Expanded(
                 flex: 2,
                  child:TextButton(onPressed: (){
-                 
                   setState(() {
                     leftmage= Random().nextInt(8)+1;
                   });
